@@ -2,12 +2,12 @@
 #include <iostream>
 
 #include "gtest/gtest.h"
-#include "math.h"
+#include "math_lib.h"
 
 namespace{
-TEST(test_math, test_add)
-{
-    double sum = math::IsPrime(2);
-    EXPECT_EQ(sum, 5.0);
-}
+    TEST(test_math, test_add)
+    {
+        bool sum = myMath::IsPrime(2);
+        EXPECT_EQ(sum, true);
+    }
 }

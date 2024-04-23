@@ -1,6 +1,6 @@
-#include "math.h"
+#include "math_lib.h"
 
-bool IsPrime(int n) {
+bool myMath::IsPrime(int n) {
   // Trivial case 1: small numbers
   if (n <= 1) return false;
 
@@ -23,6 +23,6 @@ bool IsPrime(int n) {
   return true;
 }
 
-double subtract(double x, double y){
+double myMath::subtract(double x, double y){
     return x-y;
 }

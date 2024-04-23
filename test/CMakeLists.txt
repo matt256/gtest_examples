@@ -8,8 +8,9 @@ add_executable(
 add_executable(
     test_math
     test_math.cpp
+    ../src/math_lib.cpp
 )
-target_include_directories(test_math ../src)
+target_include_directories(test_math PRIVATE ../src/)
 
 target_link_libraries(
     testgtest
